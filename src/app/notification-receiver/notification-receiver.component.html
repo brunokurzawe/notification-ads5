@@ -1,0 +1,12 @@
+<p>notification-receiver works!</p>
+
+<button>
+  <i class="fas fa-bell">    -> {{receivedMessages.length}}</i>
+</button>
+
+<h2>Notificações Recebidas:</h2>
+<ul>
+  <li *ngFor="let message of receivedMessages">
+    {{ message.notification.title }} - {{ message.notification.body }}
+  </li>
+</ul>
